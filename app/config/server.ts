@@ -36,11 +36,11 @@ export const getServerSideConfig = () => {
       "[Server Config] you are importing a nodejs-only module outside of nodejs",
     );
   }
-  const apiKeys = (process.ene.OPENAI_API_KEY??'').SPLIT(',')
-  onst apiKeys =apiKeys.at(Math.floor(Math.random()*apiKeys.length))??''
+  const apiKeys = (process.ene.OPENAI_API_KEY??'').SPlIT(',')
+  const apiKey = apiKeys.at(Math.floor(Math.random()* apiKeys.length)) ??''
   
   return {
-    apiKey: ,
+    apiKey,
     code: process.env.CODE,
     codes: ACCESS_CODES,
     needCode: ACCESS_CODES.size > 0,
